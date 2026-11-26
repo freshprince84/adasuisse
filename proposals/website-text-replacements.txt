@@ -1,0 +1,71 @@
+ADA Suisse – minimale Website-Textkorrekturen (Vorschlag)
+Stand: Plan freigegeben; Umsetzung in WordPress/Elementor (nicht in diesem Git-Repo).
+Keine neuen Unterseiten. Keine Public-IP, keine Slots/Startzeiten, keine Uptime-/Green-/Loyalty-Zusagen.
+
+Zieltext DE (sachlich):
+ADASuisse (SUI) betreibt einen Cardano-Stake-Pool auf AWS in Zürich (eu-central-2). Relay und Block-Producer laufen derzeit gemeinsam nach Bedarf. Die Marge beträgt 0 %, die Fixkosten 340 ADA pro belohnter Epoche.
+
+Zieltext EN (Meta-Option):
+Swiss Cardano stake pool. Hosted in Zurich, Switzerland (AWS). Relay and block producer currently run on demand. Margin 0%, fixed cost 340 ADA.
+
+----------------------------------------------------------------------
+DE Home – WordPress page-id-93 (Elementor 93)
+----------------------------------------------------------------------
+Rank Math Title/Description:
+- ENTFERNEN/ERSETZEN: «100% Naturstrom», «99.999% Online», extreme Uptime-Formulierungen
+- ERSETZEN durch sachlichen Kurztext auf Basis des DE-Zieltexts (ohne Garantien)
+
+Widget data-id 33f51c4 («Stabil»):
+- ALT: Unsere Nodes sind 24/7 verfügbar. 99.99999% Uptime garantiert!
+- NEU: ADASuisse (SUI) betreibt einen Cardano-Stake-Pool auf AWS in Zürich (eu-central-2). Relay und Block-Producer laufen derzeit gemeinsam nach Bedarf. Die Marge beträgt 0 %, die Fixkosten 340 ADA pro belohnter Epoche.
+
+Widget data-id e8c56ca («Swissness»):
+- ALT: Alle unsere Nodes betreiben wir auf Servern in der Schweiz.
+- NEU: Hosting in der AWS-Region Zürich (eu-central-2).
+
+----------------------------------------------------------------------
+EN Home – WordPress page-id-85
+----------------------------------------------------------------------
+Rank Math Title/Description:
+- ENTFERNEN: «100% green energy», «100% stable» als unbelegte Zusagen
+- ERSETZEN durch EN-Zieltext (sachlich)
+
+Widget data-id 1a528dc / fc35bd9:
+- ALT: Stable 24 / 7 available nodes with 99.99999% uptime guaranteed
+- NEU: Swiss Cardano stake pool. Hosted in Zurich, Switzerland (AWS). Relay and block producer currently run on demand. Margin 0%, fixed cost 340 ADA.
+
+Widget data-id 834d601:
+- ALT: All nodes running on servers located in Switzerland
+- NEU: Hosted in Zurich, Switzerland (AWS eu-central-2).
+
+----------------------------------------------------------------------
+Pool-Seite – WordPress page-id-28 (/our-cardano-stake-pool/)
+----------------------------------------------------------------------
+Rank Math Title/Description:
+- ENTFERNEN: green / 100% green energy / always online / loyalty-Zusagen
+- ERSETZEN durch EN- oder DE-Zieltext
+
+Icon-Box data-id 8aa5183:
+- ALT: Supporting Decentralization of Cardano / Standalone Servers only (no cloud services)
+- NEU: Cardano stake pool on AWS in Zurich (eu-central-2). Relay and block producer currently run together on demand.
+
+Data-Table data-id 7a710d8 (Standort/Energie):
+- ALT: Server location: Switzerland (Nottwil) / Operation with 100% renewable energy …
+- NEU: Server location: AWS Region Zurich (eu-central-2). Keine Green-/USV-/Nottwil-Zusagen ohne Beleg.
+
+Tabellen ESXi / Raspberry Pi (data-id 7301385, a00e0f2, d41f5f2):
+- ALT: VM on ESXi / Raspberry Pi / separate Relay-Darstellung
+- NEU: Ein gemeinsamer Betrieb von Relay und Block-Producer nach Bedarf (AWS). Keine Public-IP nennen.
+
+----------------------------------------------------------------------
+Loyalty – WordPress page-id-4489 (/loyalty-bonus/)
+----------------------------------------------------------------------
+Bestehende URL behalten (keine neue Seite).
+- ALT: Bonus bis 700 ADA, Airdrops, Token «Soon» …
+- NEU: Kurzer Hinweis, dass derzeit kein Loyalty-/Bonus-Programm aktiv ist
+  ODER Seite aus der Navigation nehmen und Inhalt auf diesen Hinweis reduzieren.
+
+FR/IT-Home: dieselben Claim-Familien (énergie verte / stable usw.) analog bereinigen.
+
+Rückweg: WordPress-/Elementor-Revision wiederherstellen.
+Voraussetzung Sichtbarkeit: DNS A/AAAA für adasuisse.io muss wieder gesetzt sein (derzeit laut Bestandsaufnahme fehlend).

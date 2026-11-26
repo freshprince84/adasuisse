@@ -1,0 +1,7 @@
+{
+"name": "ADA Suisse 🇨🇭",
+"description": "Swiss Cardano stake pool. Hosted in Zurich, Switzerland (AWS). Relay and block producer currently run on demand. Margin 0%, fixed cost 340 ADA.",
+"ticker": "SUI",
+"homepage": "https://adasuisse.io",
+"extended": "https://adasuisse.io/md/extended.json"
+}
