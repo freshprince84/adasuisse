@@ -1,0 +1,23 @@
+Metadaten-Vorschlag – Aktivierung (NICHT in diesem PR)
+
+Aktive on-chain referenzierte Datei:
+  https://raw.githubusercontent.com/freshprince84/adasuisse/main/metaData.json
+  (via meta_url https://git.io/JtzoH)
+
+Aktiver Blake2b-256 (unverändert lassen bis Cold-Key-Schritt):
+  5a7ef261b3a543fa0021847e541c67b36861ebd2d040094a26003dcdc9ea1300
+
+Vorschlagdatei in diesem Repo:
+  proposals/metaData-v1-proposed.json
+  UTF-8-Gesamtgrösse: 302 Bytes (Limit 512)
+  Blake2b-256 des Vorschlags: 7ae9e05fe3ca189d829ce7bb48f4918e942fc254c6b4f51adb54a9f99fc16c6c
+
+Sicherer Ablauf (nur mit Patrick / Cold Key):
+  1. Vorschlag prüfen (Inhalt, 512-Byte-Limit, kein IP/Slots/Uptime/Green/Loyalty).
+  2. Bewusst entscheiden: aktive Raw-URL erst NACH on-chain-Hash-Update überschreiben
+     ODER Zwischen-URL hosten und meta_url on-chain umstellen.
+  3. cardano-cli stake-pool metadata-hash auf dem final gehosteten Byte-Stand.
+  4. Pool-Registrierung mit neuem Hash (Cold Key) – separat, nicht durch diesen PR.
+  5. Erst danach main/metaData.json angleichen bzw. Shortlink auf den neuen Stand zeigen.
+
+Dieser PR ändert metaData.json absichtlich NICHT.
